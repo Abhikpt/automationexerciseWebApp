@@ -1,8 +1,8 @@
-describe('Validate the cart flow ', () => 
+describe('Validate the Home page ', () => 
     {
     it('validated home page elements', () => 
       {
-        cy.setCookie('sessionid', 'kggy6ae6sxuvcq4kvsdonv5todlpc5i2');
+        cy.setCookie('sessionid', '5ksl8babncs2804q70g12pbzrnt9cvcb');
         cy.visit('https://www.automationexercise.com/')
         cy.get('div#slider-carousel h1').eq(0).should('have.text', 'AutomationExercise')    
         cy.get('.features_items .productinfo.text-center').each(($el) => 

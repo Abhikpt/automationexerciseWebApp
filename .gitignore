@@ -31,3 +31,6 @@ build/
 # Git temporary files
 *.swp
 *.swo
+
+# pipline
+.yml

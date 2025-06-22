@@ -9,7 +9,7 @@ describe('Validate the cart flow ', () =>
  
   it('Go to Products page', () =>
   {
-    cy.setCookie('sessionid', 'kggy6ae6sxuvcq4kvsdonv5todlpc5i2');
+    cy.setCookie('sessionid', '5ksl8babncs2804q70g12pbzrnt9cvcb');
     cy.visit('https://www.automationexercise.com/')
     Home.ProductLink().click()
     ProductPage.addTOCart('Fancy Green Top') 
@@ -21,8 +21,6 @@ describe('Validate the cart flow ', () =>
     Payment.enterPaymentdetails('John Doe', '4111111111111111', '12', '2025', '123')
     Payment.ClickOnPayAndConfirmOrder()
     cy.get('.container .row div>p').should('have.text','Congratulations! Your order has been confirmed!')
-
-    
   })
 
 })

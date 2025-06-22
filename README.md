@@ -32,16 +32,21 @@ README.md
 
 2. **Install dependencies**
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. **Open Cypress Test Runner**
 
-   ```bash
-   npx cypress open
-   ```
+```bash
+npx cypress open
+```
 
+4. Install mocha report [optional]
+```bash
+npm install --save-dev cypress-mochawesome-reporter
+
+```
 ---
 
 ## 🚀 How to Run Tests
@@ -56,6 +61,11 @@ npx cypress open
 
 ```bash
 npx cypress run
+```
+
+### Run in headed mode with edge browser
+```bash
+npx cypress run --browser=edge --headed
 ```
 
 ### Run a specific spec file:
@@ -95,6 +105,9 @@ npx cypress run --spec cypress/e2e/sampleTest.cy.js
 * Uses `.gitignore` to keep unwanted files out of Git.
 
 ---
+
+
+
 
 ## 🤝 Contribution
 
